@@ -12,17 +12,17 @@ This is just what works for my needs.
   
   {
     
-    uint32_t  	brn;      //4 bytes 0-3
+    uint32_t  brn;      //4 bytes 0-3
     
-    uint16_t		unit;   
+    uint16_t unit;   
     
-    uint16_t  	cyn;
+    uint16_t  cyn;
     
-    uint16_t  	dom; 	    //day of month	8-9
+    uint16_t  dom; 	    //day of month	8-9
     
-    uint16_t  	yer;  		//year 10-11
+    uint16_t  yer;  		//year 10-11
     
-    char  		mth[6]; 		//month	12-17
+    char  	mth[6]; 		//month	12-17
   
   };
 
