@@ -1,7 +1,6 @@
 /*
-  databaseEx.cpp - Library for Steri-Logicial code.
+  databaseEx.cpp - Library code.
   Created by Frank Pedersen 2018 dec. 18
-  All Rights Reserved. Alpah Micro Tech Inc.
   added new struct at 44 bytes as -mainDB-
 */
 
@@ -18,7 +17,7 @@ bool databaseEx::getSize(char* xName){
 	}	
 		sdfile = sdEx.open(xName, O_RDWR);
 		
-		if ( !sdfile ) return 0;	//added this 24-oct		
+		if ( !sdfile ) return 0;		
 		count1 = ((sdfile.size()/44));
 		sdfile.close();
 		return 1;	
