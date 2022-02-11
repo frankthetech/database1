@@ -1,7 +1,6 @@
 /*
-  DataBaseEx.h - Library for Steri-Logicial code.
+  DataBaseEx.h - Library for database code.
   Created by Frank Pedersen 2018 dec. 18
-  All Rights Reserved. Alpah Micro Tech Inc.
 */
 #ifndef DatabaseEx_h
 #define DatabaseEx_h
@@ -22,14 +21,14 @@ class databaseEx
 // note this struct is 44 bytes long with only 42 used
 struct mainDB
 {
-  uint32_t  	brn; 		//bar code num	0-3
-  uint16_t		unit;		//sterlizer id 1 or 2	4-5
-  uint16_t  	cyn; 		//cycle num	6-7
-  uint16_t  	dom; 	//day of month	8-9
-  uint16_t  	yer;  		//year 10-11
-  char  		mth[6]; 		//month	12-17
-  char  		uer[12];		//user	18-29
-  char  		cnt[12];		//contents	30-41
+  uint32_t  	brn; 		
+  uint16_t	unit;		
+  uint16_t  	cyn; 		
+  uint16_t  	dom; 		
+  uint16_t  	yer;  		
+  char  	mth[6]; 	
+  char  	uer[12];	
+  char  	cnt[12];	
   
 };
 
@@ -46,7 +45,7 @@ struct mainDB
 	bool 	chkscan();	
 	
 	char 	receivedChar;
-	char  fname[14]; 	// even # of bytes big enough to hold 8.3 filename and terminator
+	char  	fname[14]; 	// even # of bytes big enough to hold 8.3 filename and terminator
 	char	reason[20];
 	byte 	flag;
 	
